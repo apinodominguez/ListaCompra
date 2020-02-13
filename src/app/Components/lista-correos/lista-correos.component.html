@@ -14,6 +14,9 @@
     </tr>
 </table>
 
-<h2>Estado de compra del producto 1:</h2>
-<h3 *ngIf="correos[0].leido">Comprado</h3>
-<h3 *ngIf="!correos[0].leido">Comprar</h3>
+<h2>Productos comprados: </h2>
+<li *ngFor="let correo of correos; index as i;">
+  <h3 *ngIf="correos[i].leido == true">{{correo.emisor}}</h3>
+</li>
+
+

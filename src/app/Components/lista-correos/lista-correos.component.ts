@@ -13,7 +13,7 @@ export class ListaCorreosComponent implements OnInit {
     const prod1 = {
       titulo: "Integral con semillas",
       emisor: 'Pan',
-      leido: true,
+      leido: false,
     };
     const prod2 = {
       titulo: "Fruta de temporada",
