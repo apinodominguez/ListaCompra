@@ -10,26 +10,32 @@ export class ListaCorreosComponent implements OnInit {
   correos: any[];
 
   constructor() {
-    const correo1 = {
-      titulo: "Titulo del 1",
-      cuerpo: `Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email
-        Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email,
-        Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email`,
-      emisor: 'correoEmisor1@openWebinar.inv',
-      destinatario: 'correoReceptor@openWebinar.inv',
+    const prod1 = {
+      titulo: "Integral con semillas",
+      emisor: 'Pan',
       leido: true,
     };
-    const correo2 = {
-      titulo: "Titulo del 2",
-      cuerpo: `Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email
-        Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuer`,
-      emisor: 'correoEmisor2@openWebinar.inv',
-      destinatario: 'correoReceptor@openWebinar.inv',
+    const prod2 = {
+      titulo: "Fruta de temporada",
+      emisor: 'Peras',
+      leido: false,
+    };
+    const prod3 = {
+      titulo: "Pasta de dientes",
+      emisor: 'Colgate',
+      leido: false,
+    };
+    const prod4 = {
+      titulo: "muesli con frutos secos",
+      emisor: 'Cereales',
       leido: false,
     };
     this.correos = [];
-    this.correos.push(correo1);
-    this.correos.push(correo2);
+    this.correos.push(prod1);
+    this.correos.push(prod2);
+    this.correos.push(prod3);
+    this.correos.push(prod4);
+
   }
 
   ngOnInit() {
